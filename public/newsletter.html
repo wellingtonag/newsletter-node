@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - '.COMPANY_NAME.'</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .email-container {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .header {
+            padding: 30px;
+            background-color: #3a3a3a;
+            color: white;
+            text-align: center;
+        }
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .greeting {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffc340;
+        }
+        .content {
+            padding: 30px;
+            background-color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #777777;
+            background-color: #eeeeee;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ffc340;
+            color: #3a3a3a !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ffb310;
+        }
+        .highlight {
+            background-color: #fff8e6;
+            padding: 20px;
+            border-left: 4px solid #ffc340;
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3a3a3a;
+        }
+        @media only screen and (max-width: 480px) {
+            .header {
+                padding: 20px;
+            }
+            .logo {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="'.LOGO_URL.'" alt="'.COMPANY_NAME.'" class="logo">
+            <h1 class="greeting">Olá, Dev!</h1>
+        </div>
+        
+        <div class="content">
+            <p>Obrigado por se inscrever na nossa newsletter de desenvolvimento!</p>
+            
+            <p>A partir de agora você vai receber:</p>
+            <ul>
+                <li>📌 Dicas semanais de programação</li>
+                <li>🚀 Novidades sobre as tecnologias mais quentes</li>
+                <li>🎁 Descontos exclusivos em nossos cursos</li>
+            </ul>
+            
+            <div class="highlight">
+                <h3 style="margin-top: 0;">Dica da Semana:</h3>
+                <p>Experimente nosso novo curso de JavaScript Avançado com 20% de desconto usando o código <strong>DEVNEWS20</strong>.</p>
+            </div>
+            
+            <p style="text-align: center;">
+                <a href="'.COMPANY_WEBSITE.'" class="button">Ver Cursos Disponíveis</a>
+            </p>
+
+            <div class="social-links">
+                <p style="text-align: center; margin-bottom: 5px;">Siga-nos nas redes sociais:</p>
+                <p style="text-align: center;">
+                    <a href="https://instagram.com/devdavez" style="color: #3a3a3a;">Instagram</a> | 
+                    <a href="https://twitter.com/devdavez" style="color: #3a3a3a;">Twitter</a> | 
+                    <a href="https://linkedin.com/company/devdavez" style="color: #3a3a3a;">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© '.date('Y').' '.COMPANY_NAME.'. Todos os direitos reservados.</p>
+            <p>
+                <a href="'.COMPANY_WEBSITE.'">Nosso Site</a> | 
+                <a href="'.UNSUBSCRIBE_URL.'">Cancelar inscrição</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
