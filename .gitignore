@@ -7,3 +7,5 @@ node_modules/
 # Logs e arquivos de sistema
 npm-debug.log*
 .DS_Store
+
+server_bkp.js
